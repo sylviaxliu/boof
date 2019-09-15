@@ -344,7 +344,7 @@
     position: absolute;
     padding: 10px 0 10px 0;
     bottom: 240px;
-    left: 200px;
+    left: 250px;
     width: 200px;
     height:  auto;
     border-radius: 100px;
@@ -361,7 +361,7 @@
     position: absolute;
     padding: 10px 0 10px 0;
     bottom: 240px;
-    left: 600px;
+    left: 550px;
     width: 200px;
     height:  auto;
     border-radius: 100px;
@@ -372,5 +372,18 @@
     font-size: 16px;
     font-weight: 700;
     z-index: 10;
+}
+
+.boof-circle7 {
+    position: absolute;
+    top: 160px;
+    right: 220px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 100px;
+    border: 20px solid rgba(255, 152, 104, 0.9);
+    -webkit-animation: boof-circle 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: boof-circle 5s infinite;
 }
 
