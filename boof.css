@@ -9,10 +9,16 @@
     outline: 1px solid #e1e1e1;
     border: 10px solid #f1f1f1;
     overflow: hidden;
+    color: white;
+
+    background: -webkit-linear-gradient(top, #ff35a7 0%,#ffe77c 100%);
+    background: -moz-linear-gradient(top,  #ff35a7 0%, #ffe77c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ff35a7 0%,#ffe77c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ff35a7 0%,#ffe77c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /** CIRCLE ANIMATION **/
-@k eyframes boof-circle {
+@keyframes boof-circle {
     0% { border-width: 10px; }
     50% { border-width: 15px; }
     100% { border-width: 10px; }
@@ -34,8 +40,8 @@
 /** GAME NAME **/
 .boof-welcome h1 {
     position: relative;
-    margin: 190 0;
-    font-size: 100px;
+    margin: 170 0;
+    font-size: 140px;
     color: #fff;
     font-weight: 700;
     letter-spacing: -8px;
@@ -55,7 +61,7 @@
 .boof-button1 {
     position: absolute;
     padding: 5px 0 5px 0;
-    top: 310px;
+    top: 320px;
     left: 400px;
     width: 200px;
     height:  auto;
@@ -96,8 +102,8 @@
 
 .boof-circle3 {
     position: absolute;
-    top: 198px;
-    right: 312px;
+    top: 148px;
+    right: 162px;
     width: 66px;
     height: 66px;
     background-color: rgba(255,255,255,0.6);
@@ -152,13 +158,15 @@
 /** DESIGN ELEMENTS **/
 .boof-circle4 {
     position: absolute;
-    top: 120px;
+    top: 130px;
     right: 140px;
     width: 40px;
     height: 40px;
     background-color: rgba(255,255,255,0.6);
     border-radius: 100px;
     border: 20px solid rgba(255, 104, 142, 0.9);
+    -webkit-animation: boof-circle 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: boof-circle 5s infinite;
 }
 
 .boof-circle5 {
@@ -170,8 +178,6 @@
     background-color: rgba(255,255,255,0.6);
     border-radius: 50%;
     border: 30px solid rgba(255, 207, 104, 0.9);
-    -webkit-animation: boof-circle 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: boof-circle 5s infinite;
 }
 
 /** CONTINUE BUTTON **/
@@ -265,6 +271,19 @@
     z-index: 10;
 }
 
+.boof-circle6 {
+    position: absolute;
+    bottom: 130px;
+    left: 140px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 100px;
+    border: 20px solid rgba(255, 104, 142, 0.9);
+    -webkit-animation: boof-circle 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: boof-circle 5s infinite;
+}
+
 /****************** GAME SCREEN ******************/
 
 .boof-game {
@@ -303,5 +322,55 @@
     position: absolute;
     width: 1000px;
     height: 600px;
-    background-color: #ff35a7;
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    background-color: #ffe368; /* Old browsers */
+    background: -webkit-linear-gradient(top, #ffe368 0%,#ff35a7 100%);
+    background: -moz-linear-gradient(top,  #ffe368 0%, #ff35a7 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffe368 0%,#ff35a7 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffe368 0%,#ff35a7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+
+.boof-killscreen {
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    text-transform: bold;
+    top: 150px;
+}
+
+.button-playAgain {
+    position: absolute;
+    padding: 10px 0 10px 0;
+    bottom: 240px;
+    left: 200px;
+    width: 200px;
+    height:  auto;
+    border-radius: 100px;
+    background-color: #ffe368;
+    text-align: center;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 10;
+}
+
+.button-toStart {
+    position: absolute;
+    padding: 10px 0 10px 0;
+    bottom: 240px;
+    left: 600px;
+    width: 200px;
+    height:  auto;
+    border-radius: 100px;
+    background-color: #ffe368;
+    text-align: center;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 10;
+}
+

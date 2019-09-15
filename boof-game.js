@@ -29,11 +29,11 @@ var ctx = canvas.getContext("2d");
 
 
 //Draw house
-var house = createSprite(ctx, "./sprites/house.png", { x: 0, y: 350, w: 300, h: 250 });
+var house = createSprite(ctx, "./sprites/house.png", { x: -50, y: 300, w: 380, h: 300 });
 objects.push(house);
 
 //Draw boof_gun
-var boof_gun = createSprite(ctx, "./sprites/boof_gun.png", { x: 45, y: 215, w: 240, h: 150 });
+var boof_gun = createSprite(ctx, "./sprites/boof_gun.png", { x: 80, y: 215, w: 140, h: 100 });
 objects.push(boof_gun);
 
 //Draw enemy
@@ -52,8 +52,10 @@ function drawCanvas() {
     for (let obj of k2) {
         ctx.drawImage(obj.img, obj.coords.x, obj.coords.y, obj.coords.w, obj.coords.h);
     }
-    ctx.strokeText("Score:", 800, 100);
-    ctx.strokeText(score, 850, 100);
+    ctx.font = "36px Montserrat";
+    ctx.fillText("SCORE:", 390, 100);
+    ctx.fillText(score, 560, 100);
+    ctx.fillStyle = 'white';
 }
 
 var globalTime = 0;
@@ -83,7 +85,7 @@ setInterval(() => {
     if (enemies[0].coords.x <= 200) {
         window.location = `./boof-death.html#score=#${score}`;
     };
-}, 1750);
+}, 1500);
 
 startFunction();
 
