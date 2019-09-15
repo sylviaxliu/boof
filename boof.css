@@ -246,7 +246,7 @@
 /** TEXT DISPLAYED ON PAGE **/
 .boof-start {
     position: absolute;
-    top: 160px;
+    top: 140px;
     width: 1000px;
     font-size: 72px;
     font-weight: 700;
@@ -257,7 +257,7 @@
 .boof-button3 {
     position: absolute;
     padding: 10px 0 10px 0;
-    bottom: 240px;
+    bottom: 260px;
     left: 400px;
     width: 200px;
     height:  auto;
@@ -273,8 +273,8 @@
 
 .boof-circle6 {
     position: absolute;
-    bottom: 130px;
-    left: 140px;
+    bottom: 200px;
+    left: 160px;
     width: 40px;
     height: 40px;
     background-color: rgba(255,255,255,0.6);
