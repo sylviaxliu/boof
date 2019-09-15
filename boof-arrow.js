@@ -12,19 +12,19 @@ function startFunction() {
     for (let num = 0; num < 4; num++) {
         let i = random();
         if (i == 0) {
-            let right = createSprite(ctx, "./sprites/arrow_right.png", { x: 200 + (150 * num), y: 120, w: 120, h: 80 });
+            let right = createSprite(ctx, "./sprites/arrow_right.png", { x: 220 + (150 * num), y: 180, w: 120, h: 80 });
             k.push("ArrowRight");
             k2.push(right);
         } else if (i == 1) {
-            let left = createSprite(ctx, "./sprites/arrow_left.png", { x: 200 + (150 * num), y: 120, w: 120, h: 80 });
+            let left = createSprite(ctx, "./sprites/arrow_left.png", { x: 200 + (150 * num), y: 180, w: 120, h: 80 });
             k.push("ArrowLeft");
             k2.push(left);
         } else if (i == 2) {
-            let up = createSprite(ctx, "./sprites/arrow_up.png", { x: 200 + (150 * num), y: 120, w: 120, h: 80 });
+            let up = createSprite(ctx, "./sprites/arrow_up.png", { x: 200 + (150 * num), y: 180, w: 120, h: 80 });
             k.push("ArrowUp");
             k2.push(up);
         } else if (i == 3) {
-            let down = createSprite(ctx, "./sprites/arrow_down.png", { x: 200 + (150 * num), y: 120, w: 120, h: 80 });
+            let down = createSprite(ctx, "./sprites/arrow_down.png", { x: 200 + (150 * num), y: 180, w: 120, h: 80 });
             k.push("ArrowDown");
             k2.push(down);
         }
@@ -64,11 +64,9 @@ document.onkeydown = function myFunction(event) {
             }, 250);
         }
     }
-    // else {
-    //     setTimeout(() => {
-    //         softResetFunction();
-    //     }, 250);
-    // }
+    if (event.key == "Enter") {
+        check = [];
+    }
 };
 
 function softResetFunction() {

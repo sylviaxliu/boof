@@ -53,8 +53,8 @@ function drawCanvas() {
         ctx.drawImage(obj.img, obj.coords.x, obj.coords.y, obj.coords.w, obj.coords.h);
     }
     ctx.font = "36px Montserrat";
-    ctx.fillText("SCORE:", 390, 100);
-    ctx.fillText(score, 560, 100);
+    ctx.fillText("SCORE:", 390, 110);
+    ctx.fillText(score, 560, 110);
     ctx.fillStyle = 'white';
 }
 
