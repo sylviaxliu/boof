@@ -1,0 +1,33 @@
+<html>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Raleway&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./boof.css">
+</link>
+
+<div id="boof-page">
+    <div class="boof-death">
+        <div class="boof-killscreen">
+            <h1>oops!</h1>
+            <p id="score">score: </p>
+            <p id="high">highscore: </p>
+        </div>
+        <a href="./boof-home.html">
+            <div class="button-toStart">back to menu</div>
+        </a>
+        <a href="./boof-game.html">
+            <div class="button-playAgain">play again</div>
+        </a>
+    </div>
+</div>
+<script>
+    let highScore = 0;
+    let score = window.location.hash;
+    score = score.substring(8);
+    if (score > highScore) {
+        highScore = score;
+    }
+    document.getElementById("score").innerHTML = "Score: " + score;
+    document.getElementById("high").innerHTML = "Highscore: " + highScore;
+</script>
+
+</html>
